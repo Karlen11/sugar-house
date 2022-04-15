@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logotipo {
+    text-align: center;
+    color: #7d2323;
+    display:flex;    
+    justify-content:center;
+    margin: 1rem;
+}
+
+.sugar {
+    display: flex;
+    text-align:center;
+    margin: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+.sugar p{
+    display: flex;
+    padding-top: 10rem;
+    font-size: 3rem;
+    justify-content: center;
+    margin: 150px;
+    color: rgb(251, 242, 229);
+    position: absolute;
+    left: 10px;
+}
+
+.row {
+    display:flex;
+    color: #7d2323;
+    margin: 5rem;
+
+}
+
+.redes{
+    display: inline;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+
