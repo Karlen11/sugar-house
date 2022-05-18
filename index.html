@@ -7,9 +7,10 @@
 
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <!--Iconos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    
     <title>The Sugar's House</title>
-
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
 
@@ -17,40 +18,51 @@
 
 <body>
     <!--Inicia header-->
-    <header>
-
-      <div class="logotipo">
-          <H1>LOGOTIPO</H1>         
-      </div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <header>
+      
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="#index.html">
+            <img src="images/Logo.png" alt="logotipo" width="80px" height="80">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
+                <a class="nav-link active" aria-current="page" href="desayunos.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Desayunos Sorpresa</a>
+                <a class="nav-link" href="#nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="desayunos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Desayunos Sorpresa
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="desayunos.html">Súper Cakes</a></li>
+                  <li><a class="dropdown-item" href="desayunos.html">Ármalo Box</a></li>
+                  <li><a class="dropdown-item" href="desayunos.html">Wooder Box-cumple</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#desayunos.html">Preguntas Frecuentes</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Súper Cakes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Contacto</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
               </li>
             </ul>
-          </div>
         </div>
-      </nav>
-    </header>
-    <!--Fin header-->
+      </div>
+    </nav>
+
+  </header>
+  <!--Fin header-->
+
+    
 
     <!--Carousel-->
-      <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/desayuno-1.jpg" class="d-block w-100" alt="desayunosorpresa">
@@ -70,43 +82,101 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </section>
+    </section>
     <!--Fin carousel-->
 
-    <section class="sugar">
-        <img src="images/inicio.jpg" class="img-fluid" alt="desayuno">
-        <p>Desayunos sorpresa, cajas de regalo y súper cakes</p>
-    </section>
-
-    <section>
-        <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Asunto" aria-label="Asunto">
-            </div>
-            <div>
-              <input type="button" class="submit" placeholder="Enviar" aria-label="Enviar">
-            </div>
-          </div>
-    </section>
 
 
-    <!-- Comienza Footer-->
+    <!--Nosotros-->
+  <section id="nosotros">
+      <div class="row justify-content-center;">
+        <h2 class="text-center">Celebramos tus momentos</h2>
+        <p class="text-center" style="padding: 20px;">"Elaboramos productos de alta calidad, utilizando los mejores ingredientes y buena técnica; innovando en sabores y recetas. Con el propósito de entregarte una experiencia inolvidable de sabor."</p>
+        <img src="video/sugarvideo.mp4" class="img-fluid" alt="Tortas de cumpleaños" class="text-center">
+     </div>
+  </section>
+    <!--Nosotros-->
+
+
+
+    <!--Catálogo-->
+  <section>
+  <figure class="text-center">
+    <blockquote class="blockquote">
+      <p>Llegamos para convertirnos en los complices perfectos ;)</p>
+    </blockquote>
+    <a href="https://wa.me/c/5491126219811">
+    <button type="button" class="btn btn-secondary btn-lg">Visitar Catálogo</button>
+    </a>
+  </figure>
+  </section>
+    <!--Fin Catálogo-->
+
+
+    <!--Banner-->
+  <section">
+      <div class="text-center">  
+        <a href="desayunos.html">
+          <img src="images/inicio.jpg" class="img-fluid" alt="regalo sorpresa" style="padding: 5%;">
+        </a>
+          <h1 class="style" style="padding: 30px;">Descubre una nuevas formas de sorprender</h1>
+      </div>
+   
+  </section>
+    <!--Banner-->
+
+
+
+    <!-- Comienza Form contacto-->
     <footer>
-      <nav class="redes">
-        <ul>
-          <li><a href="http://facebook.com">Facebook</a></li>
-          <li><a href="https://www.instagram.com">Instagram</a></li>
-          <li><a href="https://ar.linkedin.com">LinkedIn</a></li>
-        </ul>
-      </nav>
-    </footer> 
+      <div class="container contact-form">
+        <div class="contact-image">
+            <img src="images/Logo.png" alt="rocket_contact"/>
+        </div>
+        <form method="post">
+            <h3>¡Crea tu sorpresa ahora!</h3>
+           <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Tu Nombre *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Tu Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Tú Teléfono*" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Escribe tu mensaje *" style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+  </div>
 
-<!-- Termina Footer-->
 
-      </footer>
+
+<!--Comienza footer-->
+
+
+  <footer class="w-100" d-flex align-items justify-content-center flex-wrap>
+    <p class="text-center">Todos los Derechos Reservados 2022</p>
+      <div id="iconos" class="text-center" style="padding: 20px;">
+        <a href="#https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+        <a href="#https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+        <a href="#https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+  </footer>
+
+
+
+
 
     
 
