@@ -18,45 +18,31 @@
 
 <body>
     <!--Inicia header-->
-  <header>
-      
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#index.html">
-            <img src="images/Logo.png" alt="logotipo" width="80px" height="80">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="desayunos.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#nosotros">Nosotros</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="desayunos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Desayunos Sorpresa
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="desayunos.html">Súper Cakes</a></li>
-                  <li><a class="dropdown-item" href="desayunos.html">Ármalo Box</a></li>
-                  <li><a class="dropdown-item" href="desayunos.html">Wooder Box-cumple</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#desayunos.html">Preguntas Frecuentes</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-              </li>
-            </ul>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#index.html">
+          <img src="images/Logo.png" alt="logotipo" width="80px" height="80">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="desayunos.html">Desayunos Sorpresa</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-
-  </header>
+    </header>
   <!--Fin header-->
 
     
@@ -88,19 +74,19 @@
 
 
     <!--Nosotros-->
-  <section id="nosotros">
+    <section id="nosotros">
       <div class="row justify-content-center;">
         <h2 class="text-center">Celebramos tus momentos</h2>
-        <p class="text-center" style="padding: 20px;">"Elaboramos productos de alta calidad, utilizando los mejores ingredientes y buena técnica; innovando en sabores y recetas. Con el propósito de entregarte una experiencia inolvidable de sabor."</p>
+        <p class="text-center" style="padding: 20px;">"Nacimos en medio de una pandemia que, nos empujó a hacer lo que amamos; elaborar productos deliciosos y de alta calidad, utilizando los mejores ingredientes; innovando en sabores y recetas. Con el propósito de entregarte una experiencia inolvidable de sabor."</p>
         <img src="video/sugarvideo.mp4" class="img-fluid" alt="Tortas de cumpleaños" class="text-center">
      </div>
-  </section>
+    </section>
     <!--Nosotros-->
 
 
 
     <!--Catálogo-->
-  <section>
+    <section>
   <figure class="text-center">
     <blockquote class="blockquote">
       <p>Llegamos para convertirnos en los complices perfectos ;)</p>
@@ -109,12 +95,12 @@
     <button type="button" class="btn btn-secondary btn-lg">Visitar Catálogo</button>
     </a>
   </figure>
-  </section>
+    </section>
     <!--Fin Catálogo-->
 
 
     <!--Banner-->
-  <section">
+    <section id="desayunos">
       <div class="text-center">  
         <a href="desayunos.html">
           <img src="images/inicio.jpg" class="img-fluid" alt="regalo sorpresa" style="padding: 5%;">
@@ -122,69 +108,63 @@
           <h1 class="style" style="padding: 30px;">Descubre una nuevas formas de sorprender</h1>
       </div>
    
-  </section>
+    </section>
     <!--Banner-->
 
 
 
     <!-- Comienza Form contacto-->
-    <footer>
+    <section>
       <div class="container contact-form">
         <div class="contact-image">
             <img src="images/Logo.png" alt="rocket_contact"/>
         </div>
-        <form method="post">
+        <form method="post" action="form.php">
             <h3>¡Crea tu sorpresa ahora!</h3>
            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input type="text" name="txtName" class="form-control" placeholder="Tu Nombre *" value="" />
+                        <input type="text" name="name" class="form-control" placeholder="Tu Nombre *" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="txtEmail" class="form-control" placeholder="Tu Email *" value="" />
+                        <input type="text" name="email" class="form-control" placeholder="Tu Email *" value="" />
                     </div>
-                    <div class="form-group">
-                        <input type="text" name="txtPhone" class="form-control" placeholder="Tú Teléfono*" value="" />
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
-                    </div>
+              
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <textarea name="txtMsg" class="form-control" placeholder="Escribe tu mensaje *" style="width: 100%; height: 150px;"></textarea>
+                        <textarea name="textarea" class="form-control" placeholder="Escribe tu mensaje *" style="width: 100%; height: 150px;"></textarea>
                     </div>
+
+                    <div class="form-group">
+                      <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
+                  </div>
                 </div>
             </div>
         </form>
-  </div>
+      </div>
+    </section>
 
 
 
-<!--Comienza footer-->
+  <!--Comienza footer-->
 
-
-  <footer class="w-100" d-flex align-items justify-content-center flex-wrap>
+    <footer class="w-100" d-flex align-items justify-content-center flex-wrap>
     <p class="text-center">Todos los Derechos Reservados 2022</p>
       <div id="iconos" class="text-center" style="padding: 20px;">
         <a href="#https://www.facebook.com"><i class="bi bi-facebook"></i></a>
-        <a href="#https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+        <a href="#https://www.instagram.com/thesugarshouse.ar/"><i class="bi bi-instagram"></i></a>
         <a href="#https://www.linkedin.com"><i class="bi bi-linkedin"></i></a>
       </div>
+    </footer>
 
-  </footer>
+  <!--Termina footer-->
 
 
 
 
 
     
-
-
-
-
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
